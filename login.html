@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style-login.css">
+<title>
+  Log In
+</title>
+    <!-- This below script will set a cookie on login -->
+
+<script>
+    function loginUser() {
+      const t = new Date(Date.now() + 86400 * 1000).toUTCString();
+      document.cookie =
+        "testcookielogin=testcookie;expires=" +
+        t +
+        ";path=/;SameSite=Strict;";
+    }
+  </script>
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="site-identity">
+        <img src="logo.png" alt="Site Name" />
+        
+      </div>  
+      <h1>QA Test Website</h1>
+      <nav class="site-navigation">
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li> 
+          <li><a href="new.html">New Releases</a></li> 
+          <li><a href="phases.html">Phases</a></li> 
+          <li> <a href="login.html"> Log In</a></li>
+          <li> <a href="contact.html"> Contact </a></li>
+          <li> <a href="contact.html"> Help </a></li>
+        </ul>
+      </nav>
+    </header>
+    <h2>Welcome back </h2>
+      <h3>Good to see you again!</h3>
+    <div class="log">
+      <label for="emailfield">Enter your email-id </label><br><br>
+      <input type="text" id="emailfield" placeholder="email@company.com"/> <br> <br>
+      <label for="passwordfield">Enter your password</label> <br><br>
+      <input type="password" id="passwordfield" placeholder="********" /> <br> <br><br>
+      <button type="button" id="loginbutton" onclick="loginUser()">
+        <a href="logged.html">Log In </a>
+      </button> <br><br>
+      Don't have an account? <a href="signup.html"><u>Signup</u></a>
+    </div>
+    
+  </body>
+</html>

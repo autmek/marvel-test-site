@@ -1,0 +1,69 @@
+body{
+  border: 5cm;
+}
+h1{
+  color: mediumvioletred;
+  margin-top: 1cm;
+  margin-left: 6cm;
+}
+h2{
+    font-size:30px;
+    color:red;
+    text-align: center;
+}
+h3{
+  font-size:20px;
+  color:chocolate;
+  text-align: center;
+}
+u{
+  color: red;
+}
+body {
+    font-family: Helvetica;
+    margin: 0;
+  }
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  .site-header { 
+    border-bottom: 1px solid #ccc;
+    padding: .5em 1em;
+  }
+  
+  .site-header::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .site-identity {
+    float: left;
+  }
+  
+  .site-identity h1 {
+    font-size: 1.5em;
+    margin: .7em 0 .3em 0;
+    display: inline-block;
+  }
+  
+  .site-identity img {
+    width: 200px;
+    float: left;
+    margin: 20px 0 0 10px;
+  }
+  
+  .site-navigation {
+    float: right;
+  }
+  
+  .site-navigation ul, li {
+    margin: 0; 
+    padding: 0;
+  }
+  
+  .site-navigation li {
+    display: inline-block;
+    margin: 1.4em 1em 1em 1em;
+  }

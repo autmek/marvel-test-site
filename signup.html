@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>
+            SignUp
+        </title>
+        <style>
+            #emailfield{
+             width:500px;
+             height: 1cm;
+            }
+            #passwordfield{
+             width: 500px;
+             height: 1cm;
+            }
+            #loginbutton{
+             width: 500px;
+             height: 1cm;
+             background-color: aqua;
+             font-size: larger;
+             font-family:fantasy;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="site-header">
+          <div class="site-identity">
+            <img src="logo.png" alt="Site Name" />
+            
+          </div>  
+          <h1>QA Test Website</h1>
+          <nav class="site-navigation">
+            <ul class="nav">
+              <li><a href="index.html">Home</a></li> 
+              <li><a href="new.html">New Releases</a></li> 
+              <li><a href="phases.html">Phases</a></li> 
+              <li> <a href="login.html"> Log In</a></li>
+              <li> <a href="contact.html"> Contact </a></li>
+              <li> <a href="contact.html"> Help </a></li>
+            </ul>
+          </nav>
+        </header>
+        <h1 style="text-align: center;">
+            Create Your Free Account
+        </h1>
+        <div style="text-align: center;">
+            <label for="emailfield">Enter your email-id </label><br><br>
+            <input type="text" id="emailfield" placeholder="email@company.com"/> <br> <br>
+            <label for="passwordfield">Enter your password</label> <br><br>
+            <input type="password" id="passwordfield" placeholder="********" /> <br> <br><br>
+            <button type="button" id="loginbutton" onclick="loginUser()">
+              <a href="success.html">Sign Up </a>
+            </button> <br> <br>
+            Already have an account? <a href="login.html"><u>Log In</u></a>
+    
+        </div>
+        </body>
+</html>
